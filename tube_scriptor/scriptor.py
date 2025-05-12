@@ -5,7 +5,7 @@ import json
 
 
 TRANSCRIPT_URL = "https://youtubetranscript.com/?server_vid2="
-
+EXCEPTION_TEXT = "We're sorry, YouTube is currently blocking us from fetching subtitles preventing us from generating a summary for you. We're working on a fix!"
 
 def fetch_transcript(youtube_input, output_format='string'):
     video_id = extract_video_id(youtube_input)
@@ -16,6 +16,9 @@ def fetch_transcript(youtube_input, output_format='string'):
         raise Exception("Failed to fetch transcript")
 
     transcript_data = xmltodict.parse(response.content)
+
+    if EXCEPTION_TEXT in response.text:
+        raise Exception("YouTube is blocking the transcript fetching service.")
 
     if output_format == 'xml':
         return response.text

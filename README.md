@@ -1,6 +1,7 @@
 [![PyPI version](https://badge.fury.io/py/tube_scriptor.svg)](https://badge.fury.io/py/tube_scriptor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Downloads](https://static.pepy.tech/badge/tube_scriptor)](https://pepy.tech/project/tube_scriptor)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue)](https://www.linkedin.com/in/eugene-evstafev-716669181/)
 
 # Tube Scriptor
 

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='tube_scriptor',
-    version='0.1.1',
+    version='2025.5.120740',
     author='Eugene Evstafev',
     author_email='chigwel@gmail.com',
     description='A package for generating transcripts from YouTube videos in various formats',
